@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+#first{position:relative; width:100%; height:150px; background:#fffd7a;}
+#first_title{position:relative; width:400px; height:75px; background:#e0de6a; margin:0 auto; font-size:200%; font-weight:bold; text-align:center; line-height:75px;}
+#first_text{position:relative; width:400px; height:75px; background:#b3b158; margin:0 auto; font-size:90%;}
+
+#second{position:relative; width:100%; height:600px; background:#e9e8d3;}
+#view{position:relative; width:1200px; height:600px; background:rgb(96, 210, 255); margin:0 auto;}
+
+#left_view{position:relative; width:600px; height:600px; background:yellow; float:left; overflow:hidden;;}
+#right_view{position:relative; width:600px; height:600px; background:yellowgreen; float:left;}
+
+.rect{position:absolute; width:600px; height:188px; background:white;}
+#rect1{top:0;}
+#rect2{top:206px;}
+#rect3{bottom:0;}
+
+.left{position:relative; width:400px; height:188px; float:left; background:#b6e6ee;}
+.title{position:relative; width:370px; height:50px; margin:0 auto; font-size:150%; font-weight:bold; text-align:right; line-height:50px; border-top:3px solid black;} 
+.text{position:relative; width:370px; height:133px;  margin:0 auto; text-align:right; border-bottom:3px solid black;}
+
+.right{position:relative; width:200px; height:188px; float:left;}
+.circle{position:absolute; width:200px; height:188px; right:0; border-radius:50%; overflow:hidden;}

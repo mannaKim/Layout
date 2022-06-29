@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout08.html</title>
+    <style type="text/css">
+        body{margin:0}
+        
+        #first{position:relative; width:100%; height:50px; border-bottom:1px solid gray;}
+
+        .menu_bar{position:relative; width:1200px; height:50px; border:1px solid red; margin:0 auto;}
+        
+        .left{position:relative; width:500px; height:50px; border:1px solid blue; float:left; line-height:50px;}
+        .right{position:absolute; width:300px; height:50px; border:1px solid orange; right:0px; float:left;}
+
+        #second{position:relative; width:100%; height:50px; border-bottom:1px solid gray; background:#ffed9b;}
+        #second_menu{background:#b5e8ff;}
+
+        #third{position:relative; width:100%; height:600px; border-bottom:1px solid gray; background:#b5e8ff;}
+        #view{position:relative; width:1300px; height:600px; border-bottom:1px solid gray; background:#f0b5ff; margin:0 auto;}
+        #slide_banner_l{position:absolute; left:0; bottom:245px;}
+        #slide_banner_r{position:absolute; right:0; bottom:245px;}
+
+        #news_box{position:relative; width:1200px; height:560px; background:#ffb5cb; margin:0 auto; top:40px;}
+        .news{position:relative; width:285px; height:280px; float:left; border:1px solid orange; margin-right:17px;}
+        .news:nth-child(4n){margin-right:0px;}
+
+        .img{position:relative; width:285px; height:140px; border:1px solid black; overflow:hidden; border-radius:30px;}
+        .text{position:relative; width:260px; height:110px; border:1px solid black; margin:15px auto;}
+    </style>
+</head>
+<body>
+    <div id="first">
+        <div class="menu_bar">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+    <div id="second">
+        <div id="second_menu" class="menu_bar">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+    <div id="third">
+        <div id="view">
+            <div id="slide_banner_l">
+                <img src="images/slide_banner_l.png" width="50">
+            </div>
+            <div id="news_box">
+                <div class="news">
+                    <div class="img">
+                        <img src="images/news1.png" width="285">
+                    </div>
+                    <div class="text">
+                        [단독]'4세대 대표 걸그룹' 아이브 유진, '드림콘서트' MC 발탁
+                    </div>
+                </div>
+                <div class="news">
+                    <div class="img">
+                        <img src="images/news2.png" width="285">
+                    </div>
+                    <div class="text">
+                        [단독]'4세대 대표 걸그룹' 아이브 유진, '드림콘서트' MC 발탁
+                    </div>
+                </div>
+                <div class="news">
+                    <div class="img">
+                        <img src="images/news3.png" width="285">
+                    </div>
+                    <div class="text">
+                        [단독]'4세대 대표 걸그룹' 아이브 유진, '드림콘서트' MC 발탁
+                    </div>
+                </div>
+                <div class="news">
+                    <div class="img">
+                        <img src="images/news4.png" width="285">
+                    </div>
+                    <div class="text">
+                        [단독]'4세대 대표 걸그룹' 아이브 유진, '드림콘서트' MC 발탁
+                    </div>
+                </div>
+                <div class="news">
+                    <div class="img">
+                        <img src="images/news5.png" width="285">
+                    </div>
+                    <div class="text">
+                        [단독]'4세대 대표 걸그룹' 아이브 유진, '드림콘서트' MC 발탁
+                    </div>
+                </div>
+                <div class="news">
+                    <div class="img">
+                        <img src="images/news6.png" width="285">
+                    </div>
+                    <div class="text">
+                        [단독]'4세대 대표 걸그룹' 아이브 유진, '드림콘서트' MC 발탁
+                    </div>
+                </div>
+                <div class="news">
+                    <div class="img">
+                        <img src="images/news7.png" width="285">
+                    </div>
+                    <div class="text">
+                        [단독]'4세대 대표 걸그룹' 아이브 유진, '드림콘서트' MC 발탁
+                    </div>
+                </div>
+                <div class="news">
+                    <div class="img">
+                        <img src="images/news8.png" width="285">
+                    </div>
+                    <div class="text">
+                        [단독]'4세대 대표 걸그룹' 아이브 유진, '드림콘서트' MC 발탁
+                    </div>
+                </div>
+            </div>
+            <div id="slide_banner_r">
+                <img src="images/slide_banner_r.png" width="50">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

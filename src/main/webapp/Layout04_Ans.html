@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout04_Ans</title>
+    <style>
+        #first{position:relative; width:100%; height:200px; background:#f4f4f4f4;}
+        #first_title{position:relative; width:400px; height:100px; margin:0 auto; border:1px solid blue; font-size:200%; font-weight:bold; line-height:100px; text-align:center;}
+        #first_text{position:relative; width:400px; height:100px; margin:0 auto; border:1px solid blue; color:#313131f4; font-size:90%;}
+
+        #second{position:relative; width:100%; height:200px; background:#fff48ff4;}
+        #second_view{position:relative; width:1100px; height:200px; margin:0 auto; background:#ffef5f;}
+        .circle{position:relative; width:200px; height:200px; overflow:hidden; border-radius:50%; float:left; margin-right:100px;} /* margin-right 오른쪽의 마진을 100px로 하고 */
+        .circle:last-child{margin-right:0px;} /* 마지막 circle만 마진을 0px로 */
+
+        #third{position:relative; width:100%; height:200px; background:#9aff8ff4;}
+        #third_view_title{position:relative; width:1100px; height:70px; background:#a6cefff4; margin:0 auto;}
+        #third_view_text{position:relative; width:1100px; height:130px; background:#ffa6eff4; margin:0 auto;}
+
+        .title{position:relative; width:200px; height:70px; margin-right:100px; float:left; text-align:center; font-size:150%; font-weight:bold; line-height:70px; background:blue; color:white;}
+        .title:last-child{margin-right:0px;}
+
+        .text{position:relative; width:200px; height:130px; margin-right:100px; float:left; background:white; font-size:50%; text-align:center;}
+        .text:last-child{margin-right:0px;}
+    </style>
+</head>
+<body>
+    <div id="first">
+        <div id="first_title">Content Tilte01</div>
+        <div id="first_text">국방상 또는 국민경제상 긴절한 필요로 인하여 법률이 정하는 경우를 제외하고는, 사영기업을 국유 또는 공유로 이전하거나 그 경영을 통제 또는 관리할 수 없다.</div>
+    </div>
+
+    <div id="second">
+        <div id="second_view">
+            <div class="circle"><img src="images/1.jpg" width="200"></div>
+            <div class="circle"><img src="images/2.jpg" width="200"></div>
+            <div class="circle"><img src="images/3.jpg" width="200"></div>
+            <div class="circle"><img src="images/4.jpg" width="200"></div>
+        </div>
+    </div>
+
+    <div id="third">
+        <div id="third_view_title">
+            <div class="title">Segment Title</div>
+            <div class="title">Segment Title</div>
+            <div class="title">Segment Title</div>
+            <div class="title">Segment Title</div>
+        </div>
+        <div id="third_view_text">
+            <div class="text">대통령은 내란 또는 외환의 죄를 범한 경우를 제외하고는 재직중 형사상의 소추를 받지 아니한다. 국군은 국가의 안전보장과 국토방위의 신성한 의무를 수행함을 사명으로 하며, 그 정치적 중립성은 준수된다.<br/><br/><img src="images/content01.jpg"></div>
+            <div class="text">대통령은 내란 또는 외환의 죄를 범한 경우를 제외하고는 재직중 형사상의 소추를 받지 아니한다. 국군은 국가의 안전보장과 국토방위의 신성한 의무를 수행함을 사명으로 하며, 그 정치적 중립성은 준수된다.<br/><br/><img src="images/content01.jpg"></div>
+            <div class="text">대통령은 내란 또는 외환의 죄를 범한 경우를 제외하고는 재직중 형사상의 소추를 받지 아니한다. 국군은 국가의 안전보장과 국토방위의 신성한 의무를 수행함을 사명으로 하며, 그 정치적 중립성은 준수된다.<br/><br/><img src="images/content01.jpg"></div>
+            <div class="text">대통령은 내란 또는 외환의 죄를 범한 경우를 제외하고는 재직중 형사상의 소추를 받지 아니한다. 국군은 국가의 안전보장과 국토방위의 신성한 의무를 수행함을 사명으로 하며, 그 정치적 중립성은 준수된다.<br/><br/><img src="images/content01.jpg"></div>
+        </div>
+    </div>  
+</body>
+</html>

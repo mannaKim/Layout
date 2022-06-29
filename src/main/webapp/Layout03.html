@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout03.html</title>
+    <style type="text/css">
+        .layout{position:relative; width:100%; height:100px; border:1px dashed green;}
+        #boxs_base{position:relative; width:100%; height:600px; border:1px dashed green;}
+        #boxs{position:relative; width:1100px; height:100%; border:2px solid red; margin:0px auto;}
+
+        #title{position:relative; width:300px; height:100%; border:2px solid red; margin:0px auto; font-weight:bold; font-size:200%; text-align:center; line-height:120px; font-family:Verdana;}
+        #text{position:relative; width:500px; height:100%; border:2px solid blue; margin:0px auto;}
+
+        #box1{position:absolute; width:800px; height:500px; background:red; color:white; left:0; top:0;}
+        #box2{position:absolute; width:800px; height:500px; overflow:hidden; border:2px solid green; right:0; bottom:0;}
+        #box3{position:absolute; width:400px; height:300px; box-shadow: 5px 5px 5px; border:1px solid black; background:white; bottom: 30px; left:100px;}
+        #box3_title{position:relative; width:350px; height:110px; margin:0 auto; border:1px dashed black;text-align:center; line-height:110px; font-size:190%; font-family:Verdana;} 
+        #box3_text{position:relative; width:350px; height:190px; margin:0 auto; border:1px dashed black;} 
+    </style>
+</head>
+<body>
+
+    <div class="layout">
+        <div id="title">Content Tilte</div>
+    </div>
+    <div class="layout">
+        <div id="text">대통령은 헌법과 법률이 정하는 바에 의하여 국군을 통수한다. 행정각부의 설치·조직과 직무범위는 법률로 정한다. 정당은 법률이 정하는 바에 의하여 국가의 보호를 받으며, 국가는 법률이 정하는 바에 의하여 정당운영에 필요한 자금을 보조할 수 있다.</div>
+    </div>
+    <div id="boxs_base">
+        <div id="boxs">
+            <div id="box1">빨간색 배경</div>
+            <div id="box2"><img src="images/Penguins.jpg" width="800"></div>
+            <div id="box3">
+                <div id="box3_title">Segment Title</div>
+                <div id="box3_text">국가는 노인과 청소년의 복지향상을 위한 정책을 실시할 의무를 진다. 모든 국민은 고문을 받지 아니하며, 형사상 자기에게 불리한 진술을 강요당하지 아니한다.</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

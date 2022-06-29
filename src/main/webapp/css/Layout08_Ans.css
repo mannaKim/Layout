@@ -1,0 +1,54 @@
+@charset "UTF-8";
+body{margin:0}
+
+#first{position:relative; width:100%; height:65px; border-bottom:1px solid gray;}
+
+/* id가 first인 태그 아래의 view클래스만 선택 */
+#first .view{position:relative; width:1100px; height:65px; border:1px dotted red; margin:0 auto;}
+
+/* id가 first인 태그 아래의 view클래스의 하위 클래스 left 선택 */
+#first .view .left{position:relative; width:500px; height:65px; border:1px dotted blue; float:left; line-height:65px; text-align:left;}
+
+/* id가 first인 태그 아래의 view클래스의 하위 클래스 left 아래의 ul */ 
+/* ul의 display 속성을 inline-block으로 설정하면 ul을 감싸고 있는 div에서 text-align 속성으로 ul의 정렬(왼쪽,오른쪽,가운데)을 설정할 수 있다.  */
+#first .view .left ul{list-style:none; padding:0; margin:0; display:inline-block;}
+/* id가 first인 태그 아래의 view클래스의 하위 클래스 left 아래의 ul 아래의 li태그*/
+#first .view .left ul li{float:left; margin-right:20px; color:gray; cursor:default;}
+
+/* 이미지 태그의 중간 정렬 */
+img{vertical-align:middle;}
+/* id가 first인 태그 아래의 view클래스의 하위 클래스 left 아래의 ul 아래의 li에서 두번째 li만 조건 변경 */
+#first .view .left ul li:nth-child(2){color:black; font-size:110%; font-weight:bold;}
+
+
+/* id가 first인 태그 아래의 view클래스의 하위 클래스 right 선택 */
+#first .view .right{position:relative; width:300px; height:65px; border:1px dotted red; float:right; text-align:right; line-height:65px;}
+#first .view .right ul{list-style:none; padding:0; margin:0; display:inline-block;}
+#first .view .right ul li{float:right; margin-left:20px;  cursor:default;}
+
+/*----------------------------------------------------- */
+
+#second{position:relative; width:100%; height:70px; border-bottom:1px solid gray; background:#c0c0c0;}
+
+#second .view{position:relative; width:1100px; height:70px; border:1px dotted red; margin:0 auto; background:#ffe0e0;}
+
+#second .view .left{position:relative; width:500px; height:67px; border:1px dotted blue; float:left; line-height:67px; text-align:left;}
+
+#second .view .left ul{list-style:none; padding:0; margin:0; display:inline-block;}
+#second .view .left ul li{float:left; margin-right:30px; color:gray; font-family:Verdana; font-weight:bold; font-size:120%; cursor:default;} 
+/* cursor:default; 마우스 포인터가 현재 위치로 올라갔을 때 마우스 포인터의 모양 */
+
+/*----------------------------------------------------- */
+
+#third{position:relative; width:100%; height:570px; background:#c0ffd8; border-bottom:1px solid silver;}
+#third .view{position:relative; width:1200px; height:570px; background:#d6c0ff; margin:0 auto;}
+
+.lbutton{position:relative; width:50px; height:50px; float:left; top:250px; background-image:url(../images/ico_movie_171115.png); border-radius:50%; overflow:hidden; background-position:-60px -461px;}
+.news{position:relative; width:1100px; height:540px; float:left; background:#ff80a0;}
+.rbutton{position:relative; width:50px; height:50px; float:left; top:250px; background-image:url(../images/ico_movie_171115.png); border-radius:50%; overflow:hidden; background-position:0px -461px;}
+
+.newsbox{position:relative; width:265px; height:270px; border:1px solid red; float:left; margin-right:10px;}
+.newsbox:nth-child(4n){margin-right:0px;}
+
+.img{position:relative; width:265px; height:150px; border:1px solid blue; overflow:hidden; border-radius:30px;}
+.title{position:relative; width:245px; height:100px; border:1px solid blue; margin:10px auto;}

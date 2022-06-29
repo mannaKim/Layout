@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout04.html</title>
+    <style type="text/css">
+        #first{position:relative; width:100%; height:200px; background:#f4f4f4f4;}
+        #first_title{position:relative; width:400px; height:100px; margin:0 auto; border:1px solid blue; font-size:200%; font-weight:bold; line-height:100px; text-align:center;}
+        #first_text{position:relative; width:400px; height:100px; margin:0 auto; border:1px solid blue; color:#313131f4; font-size:90%;}
+
+
+        #second{position:relative; width:100%; height:200px; background:#fff48ff4;}
+        #second_view{position:relative; width:1100px; height:200px; background:#ffef5f; margin:0 auto;}
+        
+        .img{position:absolute; width:200px; height:200px; border-radius:100px; background-size:100%;}
+        #img1{background-image: url(images/1.jpg); left:0;}
+        #img2{background-image: url(images/2.jpg); left:300px}
+        #img3{background-image: url(images/3.jpg); left:600px}
+        #img4{background-image: url(images/4.jpg); left:900px}
+
+
+        #third{position:relative; width:100%; height:200px; background:#9aff8ff4;}
+        #third_title_view{position:relative; width:1100px; height:80px; background:#a6cefff4; margin:0 auto;}
+        .third_title{position:absolute; width:200px; height:80px; background:blue; color:white; font-size:150%; font-weight:bold; line-height:80px; text-align:center;}
+        #title1{left:0;}
+        #title2{left:300px;}
+        #title3{left:600px;}
+        #title4{left:900px;}
+
+        #third_text_view{position:relative; width:1100px; height:120px; background:#ffa6eff4; margin:0 auto;}
+        .third_text{position:absolute; width:200px; height:120px; background:white; font-size:50%; text-align:center;}
+        #text1{left:0;}
+        #text2{left:300px;}
+        #text3{left:600px;}
+        #text4{left:900px;}
+        .sns_img{position:absolute; width:80px; height:50px; bottom:-10px; left:60px; background-image:url(images/content01.jpg); background-size:contain; background-repeat:no-repeat; overflow:hidden;}
+    </style>
+</head>
+<body>
+    <div id="first">
+        <div id="first_title">Content Tilte01</div>
+        <div id="first_text">국방상 또는 국민경제상 긴절한 필요로 인하여 법률이 정하는 경우를 제외하고는, 사영기업을 국유 또는 공유로 이전하거나 그 경영을 통제 또는 관리할 수 없다.</div>
+    </div>
+
+    <div id="second">
+        <div id="second_view">
+            <div id="img1" class="img"></div>
+            <div id="img2" class="img"></div>
+            <div id="img3" class="img"></div>
+            <div id="img4" class="img"></div>
+        </div>
+    </div>
+
+    <div id="third">
+        <div id="third_title_view">
+            <div id="title1" class="third_title">Segment Title</div>
+            <div id="title2" class="third_title">Segment Title</div>
+            <div id="title3" class="third_title">Segment Title</div>
+            <div id="title4" class="third_title">Segment Title</div>
+        </div>
+        <div id="third_text_view">
+            <div id="text1" class="third_text">대통령은 내란 또는 외환의 죄를 범한 경우를 제외하고는 재직중 형사상의 소추를 받지 아니한다. 국군은 국가의 안전보장과 국토방위의 신성한 의무를 수행함을 사명으로 하며, 그 정치적 중립성은 준수된다.<div class="sns_img"></div></div>
+            <div id="text2" class="third_text">대통령은 내란 또는 외환의 죄를 범한 경우를 제외하고는 재직중 형사상의 소추를 받지 아니한다. 국군은 국가의 안전보장과 국토방위의 신성한 의무를 수행함을 사명으로 하며, 그 정치적 중립성은 준수된다.<div class="sns_img"></div></div>
+            <div id="text3" class="third_text">대통령은 내란 또는 외환의 죄를 범한 경우를 제외하고는 재직중 형사상의 소추를 받지 아니한다. 국군은 국가의 안전보장과 국토방위의 신성한 의무를 수행함을 사명으로 하며, 그 정치적 중립성은 준수된다.<div class="sns_img"></div></div>
+            <div id="text4" class="third_text">대통령은 내란 또는 외환의 죄를 범한 경우를 제외하고는 재직중 형사상의 소추를 받지 아니한다. 국군은 국가의 안전보장과 국토방위의 신성한 의무를 수행함을 사명으로 하며, 그 정치적 중립성은 준수된다.<div class="sns_img"></div></div>
+        </div>
+    </div>
+</body>
+</html>
